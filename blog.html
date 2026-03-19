@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — Nic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Nic.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="blog.html" class="active">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle menu">&#9776;</button>
+  </nav>
+
+  <main class="page-main">
+    <header class="page-header">
+      <h1>Blog</h1>
+      <p class="page-subtitle">Thoughts on marketing, tech, life, and the random things I find interesting.</p>
+    </header>
+
+    <div class="blog-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="marketing">Marketing</button>
+      <button class="filter-btn" data-filter="life">Life</button>
+      <button class="filter-btn" data-filter="tech">Tech</button>
+    </div>
+
+    <div class="blog-list">
+      <article class="blog-item" data-category="marketing">
+        <div class="blog-meta">
+          <span class="blog-tag">Marketing</span>
+          <span class="blog-date">Coming soon</span>
+        </div>
+        <h2 class="blog-title"><a href="#">Why most Google Ads campaigns fail before they launch</a></h2>
+        <p class="blog-excerpt">The problem isn't the budget, the targeting, or even the copy. It's the thinking before any of that. Here's what I've learned managing campaigns for South African businesses.</p>
+      </article>
+
+      <article class="blog-item" data-category="life">
+        <div class="blog-meta">
+          <span class="blog-tag">Life</span>
+          <span class="blog-date">Coming soon</span>
+        </div>
+        <h2 class="blog-title"><a href="#">What anime taught me about storytelling (and marketing)</a></h2>
+        <p class="blog-excerpt">Sounds weird. Bear with me. The best anime series do something most marketers never learn — they make you feel before they make you think.</p>
+      </article>
+
+      <article class="blog-item" data-category="marketing">
+        <div class="blog-meta">
+          <span class="blog-tag">Marketing</span>
+          <span class="blog-date">Coming soon</span>
+        </div>
+        <h2 class="blog-title"><a href="#">From copywriter to performance marketer: the messy middle</a></h2>
+        <p class="blog-excerpt">My career didn't follow a straight line — and that turned out to be the best thing that ever happened to me professionally.</p>
+      </article>
+
+      <article class="blog-item" data-category="tech">
+        <div class="blog-meta">
+          <span class="blog-tag">Tech</span>
+          <span class="blog-date">Coming soon</span>
+        </div>
+        <h2 class="blog-title"><a href="#">Building a static site in 2025: why simpler is better</a></h2>
+        <p class="blog-excerpt">No framework. No CMS. No npm install. Sometimes the best tech stack is no stack at all.</p>
+      </article>
+    </div>
+
+    <div class="blog-subscribe">
+      <h3>Don't miss a post</h3>
+      <p>Subscribe and I'll drop new posts straight to your inbox. No spam, no fluff.</p>
+      <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+        <input type="email" placeholder="your@email.com" required />
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>Made with intention by Nic &mdash; South Africa 🇿🇦</p>
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
