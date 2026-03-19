@@ -3,6 +3,9 @@ const toggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 if (toggle && navLinks) {
   toggle.addEventListener('click', () => navLinks.classList.toggle('open'));
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.nav')) navLinks.classList.remove('open');
+  });
 }
 
 // Blog category filter
@@ -23,13 +26,12 @@ filterBtns.forEach(btn => {
 function handleSubscribe(e) {
   e.preventDefault();
   const form = e.target;
-  const input = form.querySelector('input');
-  input.value = '';
-  const p = document.createElement('p');
-  p.style.cssText = 'color:var(--accent);font-size:0.9rem;margin-top:0.5rem;text-align:center;';
-  p.textContent = '🙌 You\'re in! Watch your inbox.';
-  if (!form.nextElementSibling?.tagName === 'P') form.after(p);
-  else form.after(p);
+  form.querySelector('input').value = '';
+  const msg = document.createElement('p');
+  msg.style.cssText = 'color:#16a34a;font-size:0.875rem;margin-top:0.75rem;text-align:center;';
+  msg.textContent = '🙌 You\'re in! Watch your inbox.';
+  form.after(msg);
+  setTimeout(() => msg.remove(), 4000);
 }
 
 // Contact form

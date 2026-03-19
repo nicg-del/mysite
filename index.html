@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nic — Personal Page</title>
+  <title>Nic Getkate — Performance Marketer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <nav class="nav">
-    <a href="index.html" class="nav-logo">Nic.</a>
+    <a href="index.html" class="nav-logo">Nic<span>.</span></a>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -24,9 +24,16 @@
   <main>
     <section class="hero">
       <div class="hero-text">
-        <span class="hero-greeting">Hey there, I'm</span>
-        <h1 class="hero-name">Nic <span class="wave">🖖</span></h1>
-        <p class="hero-tagline">South African. Performance marketer. AI tinkerer.<br>Google Ads, Meta Ads & a good glass of wine.</p>
+        <div class="hero-eyebrow">🇿🇦 Based in South Africa</div>
+        <h1 class="hero-name">Hey, I'm Nic.</h1>
+        <p class="hero-tagline">Performance marketer, AI workflow builder, and Google Tag Manager enthusiast. I make ads work — and I write about it.</p>
+        <div class="hero-chips">
+          <span class="chip">📈 Google Ads</span>
+          <span class="chip">📱 Meta Ads</span>
+          <span class="chip">🤖 AI & Automation</span>
+          <span class="chip">🏷️ Google Tag Manager</span>
+          <span class="chip">🍷 Wine</span>
+        </div>
         <div class="hero-actions">
           <a href="about.html" class="btn btn-primary">About me</a>
           <a href="blog.html" class="btn btn-ghost">Read the blog →</a>
@@ -34,42 +41,66 @@
       </div>
       <div class="hero-image-wrap">
         <img src="https://bear-images.sfo2.cdn.digitaloceanspaces.com/nic-1672590342-0.jpg" alt="Nic" class="hero-image" />
+        <div class="hero-badge">
+          <div class="dot"></div>
+          <span>Open to collabs</span>
+        </div>
       </div>
     </section>
 
-    <section class="intro-block">
-      <p>
-        If you've somehow stumbled into my small corner of the internet — welcome.
-        I write about performance marketing, AI workflows, and the stuff I'm figuring out along the way.
-      </p>
-    </section>
+    <div class="intro-block">
+      <p>If you've somehow stumbled into my small corner of the internet — welcome. I write about performance marketing, AI tools, and the things I'm figuring out along the way.</p>
+      <div class="intro-stats">
+        <div>
+          <div class="stat-num">5<span>+</span></div>
+          <div class="stat-label">Years in marketing</div>
+        </div>
+        <div>
+          <div class="stat-num">Google<span>.</span></div>
+          <div class="stat-label">Ads specialist</div>
+        </div>
+        <div>
+          <div class="stat-num">AI<span>.</span></div>
+          <div class="stat-label">Workflow builder</div>
+        </div>
+        <div>
+          <div class="stat-num">ZA<span>.</span></div>
+          <div class="stat-label">South African</div>
+        </div>
+      </div>
+    </div>
 
-    <section class="home-grid">
+    <div class="home-grid">
       <a href="about.html" class="card">
-        <span class="card-icon">👋</span>
+        <div class="card-num">01</div>
         <h3>About</h3>
         <p>Who I am, what I do, and how I got here.</p>
+        <span class="card-arrow">→</span>
       </a>
       <a href="projects.html" class="card">
-        <span class="card-icon">🛠️</span>
+        <div class="card-num">02</div>
         <h3>Projects</h3>
-        <p>Campaigns, tools, and AI experiments I've built.</p>
+        <p>Campaigns, tools, and AI experiments.</p>
+        <span class="card-arrow">→</span>
       </a>
       <a href="blog.html" class="card">
-        <span class="card-icon">✍️</span>
+        <div class="card-num">03</div>
         <h3>Blog</h3>
-        <p>Thoughts on marketing, AI, GTM, and life.</p>
+        <p>Thoughts on marketing, AI, GTM & life.</p>
+        <span class="card-arrow">→</span>
       </a>
       <a href="contact.html" class="card">
-        <span class="card-icon">📬</span>
+        <div class="card-num">04</div>
         <h3>Contact</h3>
-        <p>Let's connect. I don't bite.</p>
+        <p>Let's talk. I'm always up for a chat.</p>
+        <span class="card-arrow">→</span>
       </a>
-    </section>
+    </div>
   </main>
 
   <footer class="footer">
-    <p>Made with intention by Nic &mdash; South Africa 🇿🇦</p>
+    <span class="footer-logo">Nic.</span>
+    <span>Made in South Africa 🇿🇦</span>
   </footer>
 
   <script src="main.js"></script>
